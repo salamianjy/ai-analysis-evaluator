@@ -1,0 +1,8 @@
+{
+  "target": "churn", "features": ["customer_age", "monthly_spend"],
+  "time_ordered": false, "study_design": "observational",
+  "split": {"strategy": "stratified", "train_ids": [1, 2, 3], "test_ids": [4, 5]},
+  "rows": [{"tp": 40, "tn": 40, "fp": 10, "fn": 10}],
+  "metrics": {"accuracy": 0.80, "precision": 0.80, "recall": 0.80},
+  "claims": {"causal": false}
+}

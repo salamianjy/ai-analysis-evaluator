@@ -1,0 +1,8 @@
+{
+  "target": "churn", "features": ["customer_age", "churn", "post_outcome_refund"],
+  "time_ordered": true, "study_design": "observational",
+  "split": {"strategy": "random", "train_ids": [1, 2, 3], "test_ids": [3, 4]},
+  "rows": [{"tp": 40, "tn": 40, "fp": 10, "fn": 10}],
+  "metrics": {"accuracy": 0.98, "precision": 0.90, "recall": 0.80},
+  "claims": {"causal": "This campaign caused lower churn", "fairness_proven": true}
+}
